@@ -3,7 +3,7 @@
 </p>
 
 ## 🖥️ Projeto 
-Esse é um projeto Web Responsivo de uma cápsula do tempo para exibir memórias em uma time-line
+Esse é um projeto Web Responsivo de uma cápsula do tempo para exibir memórias em uma time-line. Para acessar o site do projeto [clique aqui](https://brunotenedini.github.io/SpaceTime-NLW/)
 
 ## 🚀 Tecnologias
 Esse projeto foi desenvolvido durante a NLW da RocketSeat com as seguintes tecnologias:
