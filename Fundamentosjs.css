@@ -46,60 +46,6 @@ body {
   /* vh = altura, fr = fração da página */
 }
 
-nav {
-  padding: 64px;
-  grid-area: timeline;
-
-  overflow-y: scroll; /*quando o conteúdo não caber na vertical, é habilitado o scroll */
-  animation: entrada 0.7s ease-in-out;
-}
-
-.memory {
-  display: flex; /* Alinha todos os elementos um do lado do outro (flexíveis)*/
-  flex-direction: column; /* Alinha um em baixo do outro */
-  gap: 16px; /* espaçamento entre os elementos (tags) */
-  text-decoration: none; /*serve para remover o underline das frases*/
-  margin-bottom: 64px; /* espaçamento entre as caixas*/
-}
-
-.memory small {
-  color: #bebebf;
-  font-size: 0.75rem;
-}
-
-.memory h1 {
-  font-size: 2rem;
-  color: #eaeaea;
-}
-
-.memory img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover; /* mantém a proporção de uma capa, não estica*/
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.memory div {
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.memory:hover img {
-  /* hover=quando passar o mouse em cima */
-  transform: scale(1.1);
-}
-
-.memory p {
-  font-size: 1.2rem;
-  color: #bebebf;
-  line-height: 28px; /* altura de uma linha para outra*/
-}
-
-/* O GRID LAYOUT POSSIBILITA DIVIDIR O NOSSO SITE EM LINHAS E COLUNAS (separar áreas) */
-
 aside {
   grid-area: profile;
   border-right: 1px solid;
@@ -184,12 +130,43 @@ aside div {
     justify-content: center;
 }
 
+.redes svg {
+  transition: transform 0.3s ease-in;
+}
+
 .redes:hover svg {
   transform: scale(1.4);
 }
+nav {
+  padding: 64px;
+  grid-area: timeline;
 
-.redes svg {
-  transition: transform 0.3s ease-in-out;
+  overflow-y: scroll; /*quando o conteúdo não caber na vertical, é habilitado o scroll */
+  animation: entrada 0.7s ease-in-out;
+}
+
+.memory {
+  display: flex; /* Alinha todos os elementos um do lado do outro (flexíveis)*/
+  flex-direction: column; /* Alinha um em baixo do outro */
+  gap: 16px; /* espaçamento entre os elementos (tags) */
+  text-decoration: none; /*serve para remover o underline das frases*/
+  margin-bottom: 64px; /* espaçamento entre as caixas*/
+}
+.memory h1 {
+  font-size: 2rem;
+  color: #eaeaea;
+}
+/* O GRID LAYOUT POSSIBILITA DIVIDIR O NOSSO SITE EM LINHAS E COLUNAS (separar áreas) */
+
+
+.link1 {
+  text-decoration: none;
+}
+
+.listas a {
+  text-decoration: none;
+  color: #727275;
+  
 }
 
 @media (max-width: 768px) {
