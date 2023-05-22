@@ -63,8 +63,8 @@ aside * {
 
 .firstimage img {
   margin-top: 25px;
-  width: 250px;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,43 +130,55 @@ aside div {
     justify-content: center;
 }
 
-.redes svg {
-  transition: transform 0.3s ease-in;
-}
 
-.redes:hover svg {
-  transform: scale(1.4);
-}
 nav {
-  padding: 64px;
+  padding: 50px;
   grid-area: timeline;
 
   overflow-y: scroll; /*quando o conteúdo não caber na vertical, é habilitado o scroll */
   animation: entrada 0.7s ease-in-out;
 }
 
-.memory {
-  display: flex; /* Alinha todos os elementos um do lado do outro (flexíveis)*/
-  flex-direction: column; /* Alinha um em baixo do outro */
-  gap: 16px; /* espaçamento entre os elementos (tags) */
-  text-decoration: none; /*serve para remover o underline das frases*/
-  margin-bottom: 64px; /* espaçamento entre as caixas*/
-}
 .memory h1 {
   font-size: 2rem;
   color: #eaeaea;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 /* O GRID LAYOUT POSSIBILITA DIVIDIR O NOSSO SITE EM LINHAS E COLUNAS (separar áreas) */
 
 
-.link1 {
-  text-decoration: none;
+ul {
+  list-style: none;
 }
 
-.listas a {
+section div {
+    padding: 32px;
+    padding-top: 24px;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 24px;
+}
+
+
+.links-list a {
   text-decoration: none;
-  color: #727275;
+  color: #836FFF;
   
+}
+
+li {
+    transition: transform .3s;
+}
+
+
+li:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

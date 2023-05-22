@@ -115,10 +115,12 @@ aside * {
   animation: entrada 0.7s ease-in-out;
 }
 
+
+
 .firstimage img {
   margin-top: 25px;
-  width: 250px;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   margin-left: auto;
   margin-right: auto;
 }
